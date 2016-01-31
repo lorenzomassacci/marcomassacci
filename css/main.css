@@ -64,10 +64,6 @@ img {
 	max-width: none;	
 }
 
-strong {
-  	font-weight: 500;
-}
-
 p {
 	margin: 0 0 30px;
 }
@@ -503,10 +499,10 @@ header #logo {
 }
 
 header #logo a {
-	background: url(../img/logo.png) no-repeat;
+	/*background: url(../img/logo.png) no-repeat;
 	width: 96px;
 	height: 30px;
-	text-indent: -9999px;
+	text-indent: -9999px;*/
 	display: block;
 	opacity: 1;
 	filter: alpha(opacity=100);

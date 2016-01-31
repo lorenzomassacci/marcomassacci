@@ -396,8 +396,8 @@
   	only screen and (min-resolution: 2dppx) {
 		
 		header #logo a {
-			background-image: url(../img/logo_@2x.png);
-			background-size: 96px 30px;
+			/*background-image: url(../img/logo_@2x.png);
+			background-size: 96px 30px;*/
 		}
 		
 		.menu-nav {
@@ -406,7 +406,7 @@
 		}
 		
 		.type-work {
-			background-image: url(../img/filter-icon_@2x.png);
+			background-image: url(../img/filter-icon_@2x.png) no-repeat;
 			background-size: 16px 16px;
 		}
 	}
