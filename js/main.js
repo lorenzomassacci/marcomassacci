@@ -63,7 +63,7 @@ jQuery(function($) {
 			performance: 1, // 0-Normal, 1-Hybrid speed/quality, 2-Optimizes image quality, 3-Optimizes transition speed // (Only works for Firefox/IE, not Webkit)
 			image_protect: 1, // Disables image dragging and right click with Javascript
 
-			// Size & Position						   
+			// Size & Position
 			min_width: 0, // Min width allowed (in pixels)
 			min_height: 0, // Min height allowed (in pixels)
 			vertical_center: 1, // Vertically center background
@@ -72,7 +72,7 @@ jQuery(function($) {
 			fit_portrait: 1, // Portrait images will not exceed browser height
 			fit_landscape: 0, // Landscape images will not exceed browser width
 
-			// Components							
+			// Components
 			slide_links: 'blank', // Individual links for each slide (Options: false, 'num', 'name', 'blank')
 			thumb_links: 0, // Individual thumb links for each slide
 			thumbnail_navigation: 0, // Thumbnail navigation
@@ -100,8 +100,8 @@ jQuery(function($) {
 				}
 			],
 
-			// Theme Options			   
-			progress_bar: 0, // Timer for each slide							
+			// Theme Options
+			progress_bar: 0, // Timer for each slide
 			mouse_scrub: 0
 
 		});
@@ -159,7 +159,7 @@ jQuery(function($) {
 				options[key] = value;
 				if (key === 'layoutMode' && typeof changeLayoutMode === 'function') {
 					// changes in layout modes need extra logic
-					changeLayoutMode($this, options)
+					changeLayoutMode($this, options);
 				} else {
 					// otherwise, apply new options
 					$container.isotope(options);
@@ -294,7 +294,7 @@ jQuery(function($) {
 				scrollTop: "0"
 			}, 750, 'easeOutExpo');
 			e.preventDefault();
-		})
+		});
 
 		$(window).scroll(function() {
 			didScroll = true;
@@ -429,7 +429,7 @@ jQuery(function($) {
 		BRUSHED.filter();
 		BRUSHED.fancyBox();
 		BRUSHED.contactForm();
-		BRUSHED.tweetFeed();
+		//BRUSHED.tweetFeed();
 		BRUSHED.scrollToTop();
 		BRUSHED.utils();
 		BRUSHED.accordion();
